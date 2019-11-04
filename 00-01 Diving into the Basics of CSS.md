@@ -261,6 +261,59 @@ h1 {
 }
 ```
 
+Adding Combinators
+------------------
+
+adding combinators allows us to combine multipel selectors to be more precise about what we want to select
+
+say we want to select any h1 tag that is inside the element with an id of \#product-overview
+
+```css
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+```
+
+with more information to it it makes it more specific and wins over rules with less information
+
+Combinators
+-----------
+
+allwo us to be more clear about our rules and select elements by passing more information to the selector
+
+four improtant types of combinators
+
+```css
+/*adjacent sibling is the first one*/
+/*targets all paragprahs that direcetly follow a h2 tag*/
+h2 + p {
+    
+}
+
+/*general sibling*/
+/*more flexibl just has to be a h2 siblinge */
+h2 ~ p {
+    
+}
+
+/*child*/
+/*any paragraph that is a direct child of a div so anyone that is inside a div */
+div > p {
+    
+}
+
+/*descendant*/
+/* any paragpah inside a div doesnt have to be a direct descendant*/
+div p {
+    
+}
+```
+
+direct selectors however have a little bit better performance
+
+
+
 
 
 
