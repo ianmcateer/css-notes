@@ -1,4 +1,4 @@
-/* html {
+html {
     box-sizing: border-box;
 }
 
@@ -6,15 +6,13 @@
 *:before,
 *:after {
     box-sizing: inherit;
-} */
+}
 
 .first-box {
     height: 100px;
     width: 200px;
     border: 8px solid blue;
     background: lightcoral;
-
-    box-sizing: padding-box;
 }
 
 .second-box {
