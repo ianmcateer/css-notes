@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    background-color: blue;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.flex-child {
+    font-family: "Open Sans", sans-serif;
+    flex: 1;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 10px;
+    background-color: #f06292;
+}
+
+.inline-flex-container {
+    background-color: blue;
+    margin-bottom: 10px;
+    display: inline-flex;
+}

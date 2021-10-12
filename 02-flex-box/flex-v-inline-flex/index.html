@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inline FLex v Flex</title>
+        <link rel="stylesheet" href="./normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1><code>display: flex</code> vs <code>display: inline-flex</code></h1>
+        <h2>Example 1: <code>display: flex</code></h2>
+        <p>
+            The two containers sits on their own line. The children inside each
+            container occupy equal width.
+        </p>
+        <div class="flex-container">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+        </div>
+        <h2>Example 2: <code>display: inline-flex</code></h2>
+        <div class="inline-flex-container">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+        </div>
+        <div class="inline-flex-container">
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+            <div class="flex-child"></div>
+        </div>
+        <h2>Explanation</h2>
+        <p>
+            An element with <code>display: flex</code> is similar to an element
+            with <code>display: block</code>, whereby it occupies the whole row.
+        </p>
+        <p>If we change this to <code>display: inline-flex</code>, it:</p>
+        <ul>
+            <li>makes the parent container display inline</li>
+        </ul>
+        <p>
+            There is no difference on the effect on flex items between
+            inline-flex and flex
+        </p>
+    </body>
+</html>
